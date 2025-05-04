@@ -1,0 +1,8 @@
+deepspeed_config:
+  deepspeed_config_file: "ds_config.json"
+  zero_optimization:
+    stage: 3
+    offload_optimizer:
+      device: cpu
+    offload_param:
+      device: cpu
